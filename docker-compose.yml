@@ -1,0 +1,10 @@
+version: '7'
+
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+      - "5000:5000"
+    volumes:
+      - ./storage:/app/storage
